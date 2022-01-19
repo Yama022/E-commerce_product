@@ -71,4 +71,24 @@
       }
     }
   }
+
+  &__choiceImage {
+    margin-left: 8rem;
+    margin-top: 2rem;
+    height: 100%;
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    &>img {
+      width: 20%;
+      border-radius: 10px;
+      border: 2px solid orange;
+      object-fit: contain;
+      &:hover {
+        cursor: pointer;
+        opacity: .4;
+      }
+    }
+
+  }
 }

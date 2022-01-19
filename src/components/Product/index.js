@@ -1,5 +1,9 @@
 import React from 'react';
-import imageFirst from '../../../images/image-product-1.jpg';
+import ImageMain from '../../../images/image-product-1.jpg';
+import ImageFirst from '../../../images/image-product-1-thumbnail.jpg';
+import ImageSecond from '../../../images/image-product-2-thumbnail.jpg';
+import ImageThird from '../../../images/image-product-3-thumbnail.jpg';
+import ImageFourth from '../../../images/image-product-4-thumbnail.jpg';
 
 import './style.scss';
 
@@ -8,7 +12,7 @@ export default function Product() {
     <div className="product">
 
       <div className="product__image">
-        <img src={imageFirst} alt="imageFirst" />
+        <img src={ImageMain} alt="ImageMain" />
       </div>
 
       <div className="product__info">
@@ -24,7 +28,14 @@ export default function Product() {
           <span className="product__info__price__oldPrice">$250.00</span>
         </div>
       </div>
-      
+
+      <div className="product__choiceImage">
+        <img className="product__choiceImage__image product__choiceImage__image--active" src={ImageFirst} alt="ImageFirst" />
+        <img src={ImageSecond} alt="ImageSecond" />
+        <img src={ImageThird} alt="ImageThird" />
+        <img src={ImageFourth} alt="ImageFourth" />
+      </div>
+
     </div>
   );
 }
